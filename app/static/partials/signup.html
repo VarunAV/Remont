@@ -1,0 +1,27 @@
+<div id="recycle">
+<br><br><br>
+<center>
+  <div ng-controller = "signupController">
+<div class="container">
+    <h2>Sign-Up</h2>
+    <br>
+    <div class = "re2">
+    <form id = "login" ng-submit="sendPost()" method="POST">
+      <input type="number" placeholder="Mobile no." class="form-control" ng-model="mobile"><br>
+      <input type="text" placeholder="Username" class="form-control" ng-model="username"><br>
+      <input type="password" placeholder="Password" class="form-control" ng-model="password"><br>
+      <input type="password" placeholder="Re-enter Password" class="form-control" ng-model="password2"><br>
+
+        <br>
+        <button style="margin-left:40px;"class="btn btn-lg btn-success" type="ng-submit">SignUp</button>
+
+      </div>
+
+    </form><br>
+    <br><br>
+    Already have an account?<br>
+    <a href="/#/login">Click here</a> to login in
+</div>
+</div>
+</center>
+</div>
