@@ -195,7 +195,7 @@ angular.module('myApp', ['ngRoute', 'ngResource', 'ngStorage'])
       if($scope.item == undefined | $scope.item == null | $scope.item == '') {
         alertify.alert("Please select the resource.");
       }
-      else if($scope.weight == undefined | $scope.weight == null | $scope.weigth <= 0) {
+      else if($scope.weight == undefined | $scope.weight == null | $scope.weigth <= 0 | $scope.weight == '') {
         alertify.alert("Please enter a valid weight.");
       }
       else if($scope.address == undefined | $scope.address == null | $scope.address == '') {
@@ -231,7 +231,7 @@ angular.module('myApp', ['ngRoute', 'ngResource', 'ngStorage'])
         alertify.alert("Please select the resource.");
         return false;
       }
-      if($scope.weight == undefined | $scope.weight == null | $scope.weight <= 0) {
+      if($scope.weight == undefined | $scope.weight == null | $scope.weight <= 0 | $scope.weight == '') {
         alertify.alert("Please enter a valid weight.")
         return false;
       }
